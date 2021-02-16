@@ -1,0 +1,15 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #2b2d42;
+    color: white;
+}
+
+h1{
+    font-size: 6rem;
+    text-align: center;
+    margin-inline-start: 50px;
+}
+
