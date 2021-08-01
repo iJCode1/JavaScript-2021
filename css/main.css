@@ -70,6 +70,24 @@ p{
     text-decoration: none;
 }
 
+.flujo-eventos div{
+    font-size: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+.uno{
+    background-color: #001E6C;
+}
+
+.dos{
+    background-color: #035397;
+}
+
+.tres{
+    background-color: #5089C6;
+}
+
 .footer{
     align-items: center;
     background-color: var(--secondary-color);
