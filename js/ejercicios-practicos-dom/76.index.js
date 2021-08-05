@@ -1,7 +1,8 @@
-//Añadiendo eventos al document
-document.addEventListener("click", (e)=>{
-    if(e.target.matches("#hamburger-button")){
-        document.querySelector("#menu").classList.toggle("is-active");
-        document.querySelector("#hamburger-button").style.backgroundImage = "url('../../assets/icons/simbolo-x.png')";
-    }
-});
+import hamburgerButton from './hamburger_button.js';
+
+//Añadiendo eventos con 'DOMContentLoaded'
+const d = document;
+
+d.addEventListener("DOMContentLoaded", (e)=>{
+    hamburgerButton("#hamburger-button", "#menu", "#menu ul li a");
+})
