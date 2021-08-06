@@ -32,6 +32,12 @@ h1{
     margin-block-end: 20px;
 }
 
+p{
+    font-size: 2rem;
+    margin-block-start: .5rem;
+    margin-block-end: 3rem;
+}
+
 .section{
     min-height: 700px;
     text-align: center;
@@ -51,6 +57,7 @@ h1{
     right: 0;
     top: 0;
     width: 100vw;
+    z-index: 998;
 }
 
 .menu ul{
@@ -98,6 +105,7 @@ h1{
     position: fixed;
     right: 10px;
     width: 64px;
+    z-index: 999;
 }
 
 .is-active{
@@ -109,12 +117,6 @@ h1{
 }
 
 /* ***************** Sección 1 ***************** */
-.section1 p{
-    font-size: 2rem;
-    margin-block-start: .5rem;
-    margin-block-end: 3rem;
-}
-
 .section1 span{
     display: inline-block;
     font-size: 4rem;
@@ -132,4 +134,27 @@ h1{
     padding-block: .8rem;
     padding-inline: 1rem;
     margin-inline-end: 2rem;
+}
+/* ***************** Sección 2 ***************** */
+.keyboard-wrapper{
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 900px;
+}
+
+.keyboard-ball{
+    background-color: var(--yellow);
+    border-radius: 50%;
+    bottom: 0px;
+    height: 80px;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 80px;
 }
