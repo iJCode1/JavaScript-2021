@@ -2,6 +2,7 @@ import hamburgerButton from './hamburger_button.js';
 import {clockFunction, alarmaFunction} from './reloj_alarma.js';
 import {keyboardBall,shortcuts} from './keyboardBall.js';
 import countdown from './countdown.js';
+import scroll from './scroll.js';
 
 
 //Añadiendo eventos con 'DOMContentLoaded'
@@ -12,6 +13,8 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     clockFunction("#btnIniciar", "#btnDetener");
     alarmaFunction("#alarmaIniciar", "#alarmaDetener");
     countdown("#countdown", "#date",".mostrarCountdown",".detenerCountdown");
+
+    scroll("#btnScroll");
 });
 
 d.addEventListener("keydown", (e)=>{

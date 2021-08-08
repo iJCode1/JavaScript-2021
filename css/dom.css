@@ -178,3 +178,20 @@ p{
 .section3 input, .section3 label{
     font-size: 1.5rem;
 }
+/* ***************** Botón de Scroll ***************** */
+.btnScroll{
+    background-color: var(--yellow);
+    border-radius: 50%;
+    background-image: url("../assets/icons/up-arrow.png");
+    background-position: center;
+    background-size: 36px;
+    background-repeat: no-repeat;
+    bottom: 10px;
+    display: none;
+    height: 64px;
+    padding-inline-end: 1px;
+    position: fixed;
+    right: 90px;
+    width: 64px;
+    z-index: 997;
+}
