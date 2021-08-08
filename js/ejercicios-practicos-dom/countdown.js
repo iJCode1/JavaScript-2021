@@ -1,4 +1,5 @@
 const d = document;
+let interval;
 
 
 export default function countdown(elemento, inputFecha, btnMostrar, btnDetener){
@@ -17,7 +18,7 @@ export default function countdown(elemento, inputFecha, btnMostrar, btnDetener){
             let fechaUsuario = new Date($inputFecha.value);
 
 
-            let interval = setInterval(()=>{
+            interval = setInterval(()=>{
                 let fechaActual = new Date();
                 //Se indica 1000 para representar los milisegundos.
                 let restaFechas = (fechaUsuario.getTime() - fechaActual.getTime() + 1000) / 1000;
