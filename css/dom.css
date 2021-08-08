@@ -130,7 +130,7 @@ p{
     width: 100%;
 }
 
-.section1 button{
+.section1 button, .section3 button{
     background-color: var(--secondary-color);
     border: 2px solid var(--primary-color);
     box-shadow: 4px 4px 2px var(--yellow);
@@ -163,4 +163,18 @@ p{
     right: 0px;
     top: 0px;
     width: 80px;
+}
+/* ***************** Sección 3 ***************** */
+.section3 span{
+    font-size: 3rem;
+    display: inline-block;
+    margin-block-end: 1rem;
+}
+
+.section3 form{
+    margin-block-end: 2rem;
+}
+
+.section3 input, .section3 label{
+    font-size: 1.5rem;
 }
