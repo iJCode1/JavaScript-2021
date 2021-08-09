@@ -15,8 +15,10 @@ d.addEventListener("DOMContentLoaded", (e)=>{
     alarmaFunction("#alarmaIniciar", "#alarmaDetener");
     countdown("#countdown", "#date",".mostrarCountdown",".detenerCountdown");
     scroll("#btnScroll");
-    modeDark("#btnModeDark");
 });
+
+
+modeDark("#btnModeDark");
 
 d.addEventListener("keydown", (e)=>{
     keyboardBall(e, "#keyboard-ball", "#keyboard-wrapper");
