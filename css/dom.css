@@ -218,3 +218,24 @@ p{
 .keyboard-wrapper-dark{
     background-color: var(--white);
 }
+/* ***************** Sección 4 ***************** */
+.section4{
+    margin-block-end: 40px;
+}
+
+.section4 .section4--video{
+    margin-block-end: 20px;
+}
+
+.section4 a{
+    font-size: 2rem;
+}
+
+/*
+    Añadiendo Media Query
+
+@media screen and (min-width: 630px){
+    body{
+        background-color: var(--yellow);
+    }
+}*/
