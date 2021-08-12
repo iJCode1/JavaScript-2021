@@ -47,6 +47,9 @@ p{
 .section{
     min-height: 700px;
     text-align: center;
+    border-block-end: 3px solid var(--yellow);
+    padding-block-end: 15px;
+    margin-block-end: 50px;
 }
 
 .section h2{

@@ -33,6 +33,7 @@ export default function modeDark(boton){
             localStorage.setItem("modoSection3", d.body.querySelector("#section3").classList);
             localStorage.setItem("modoSection4", d.body.querySelector("#section4").classList);
             localStorage.setItem("modoSection5", d.body.querySelector("#section5").classList);
+            localStorage.setItem("modoSection6", d.body.querySelector("#section6").classList);
 
             localStorage.setItem("modoSection2Background", d.body.querySelector("#keyboard-wrapper").classList);
 
@@ -50,6 +51,7 @@ export default function modeDark(boton){
             const modoSection3 = localStorage.getItem("modoSection3");
             const modoSection4 = localStorage.getItem("modoSection4");
             const modoSection5 = localStorage.getItem("modoSection5");
+            const modoSection6 = localStorage.getItem("modoSection6");
             const modoSection2Background = localStorage.getItem("modoSection2Background");
             const modoBtnMode = localStorage.getItem("btnModeImage");
     
@@ -61,6 +63,7 @@ export default function modeDark(boton){
             d.querySelector("#section3").classList = modoSection3;
             d.querySelector("#section4").classList = modoSection4;
             d.querySelector("#section5").classList = modoSection5;
+            d.querySelector("#section6").classList = modoSection6;
     
             d.querySelector("#keyboard-wrapper").classList = modoSection2Background;
             
