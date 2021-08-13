@@ -37,7 +37,7 @@ export default function deteccionDispositivos(contenedor){
             return this.chrome() || this.firefox() || this.safari() || this.opera || this.ie || this.edge();
         },
     }
-    console.log(ua);
+    // console.log(ua);
 
     $contenedor.innerHTML = `
         <ul>

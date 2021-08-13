@@ -45,11 +45,14 @@ p{
 }
 
 .section{
-    min-height: 700px;
     text-align: center;
     border-block-end: 3px solid var(--yellow);
     padding-block-end: 15px;
     margin-block-end: 50px;
+}
+
+.section:last-of-type{
+    border-block-end: none;
 }
 
 .section h2{
@@ -258,4 +261,27 @@ p{
 .section5 form input[type="button"]:hover{
     background-color: var(--yellow);
     color: var(--secondary-color);
+}
+/* ***************** Sección 7 ***************** */
+.network{
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+    height: 90px;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.isOnline{
+    background-color: lawngreen;
+    color: var(--primary-color);
+}
+
+.isOffline{
+    background-color: var(--dark-red);
+    color: var(--white);
 }

@@ -7,6 +7,7 @@ import modeDark from "./mode-dark.js";
 import responsiveJs from "./responsiveJs.js";
 import tester from "./responsive_tester.js";
 import deteccionDispositivos from "./deteccion_dispositivos.js";
+import deteccionRed from "./deteccion-red.js";
 
 //Añadiendo eventos con 'DOMContentLoaded'
 const d = document;
@@ -28,7 +29,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.859260728401!2d-99.19436638459169!3d19.331912486941594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdfffe5cfdd5cf%3A0xb87221ef658004e2!2sEstadio%20Ol%C3%ADmpico%20Universitario!5e0!3m2!1sen!2smx!4v1628575624806!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
   );
   tester("#form");
-  deteccionDispositivos("#deteccion-dispositivos")
+  deteccionDispositivos("#deteccion-dispositivos");
+  deteccionRed();
 });
 
 modeDark("#btnModeDark");
