@@ -23,6 +23,4 @@ export default async function deteccionWebCam(contenedor, limitaciones){
         $contenedor.appendChild($p);
         $contenedor.removeChild($video);
     }
-
-    console.log("Webcam");
 }

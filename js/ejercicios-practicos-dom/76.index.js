@@ -9,6 +9,7 @@ import tester from "./responsive_tester.js";
 import deteccionDispositivos from "./deteccion_dispositivos.js";
 import deteccionRed from "./deteccion-red.js";
 import deteccionWebCam from "./deteccion_webcam.js";
+import detectarGeolocalizacion from './geolocalizacion.js';
 
 //Añadiendo eventos con 'DOMContentLoaded'
 const d = document;
@@ -33,6 +34,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   deteccionDispositivos("#deteccion-dispositivos");
   deteccionRed();
   deteccionWebCam("#section8", {audio: true, video: {width: 1280, height: 720}});
+  detectarGeolocalizacion("#section9");
 });
 
 modeDark("#btnModeDark");
