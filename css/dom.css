@@ -194,6 +194,20 @@ mark {
   width: 64px;
   position: fixed;
 }
+
+.btn2 {
+  border-radius: 5px;
+  border: 3px solid var(--primary-color);
+  box-shadow: 3px 3px 0px var(--yellow);
+  font-size: 2rem;
+  margin-inline-end: 10px;
+  padding: 0.3rem 1rem;
+}
+
+.btn2:hover {
+  background-color: var(--yellow);
+  color: var(--secondary-color);
+}
 /* ***************** Botón de Scroll ***************** */
 .btnScroll {
   background-image: url("../assets/icons/up-arrow.png");
@@ -251,22 +265,6 @@ mark {
   font-size: 2rem;
   margin-block-end: 20px;
   padding: 2px 5px;
-}
-
-.section5 form input[type="submit"],
-.section5 form input[type="button"] {
-  border-radius: 5px;
-  border: 3px solid var(--primary-color);
-  box-shadow: 3px 3px 0px var(--yellow);
-  font-size: 2rem;
-  margin-inline-end: 10px;
-  padding: 0.3rem 1rem;
-}
-
-.section5 form input[type="submit"]:hover,
-.section5 form input[type="button"]:hover {
-  background-color: var(--yellow);
-  color: var(--secondary-color);
 }
 /* ***************** Sección 7 ***************** */
 .network {
@@ -347,4 +345,18 @@ mark {
   opacity: 0;
   order: 1;
   visibility: hidden;
+}
+/* ***************** Sección 10 ***************** */
+.giveaway {
+  margin-block-end: 15px;
+}
+
+.giveaway li {
+  font-size: 2rem;
+  list-style: none;
+  padding-block: 5px;
+}
+
+.winner{
+  color: var(--dark-red);
 }
