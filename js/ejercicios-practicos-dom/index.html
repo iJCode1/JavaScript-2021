@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="../../css/dom.css">
     <title>iJCode - Ejercicios del DOM</title>
 </head>
+
 <body>
     <aside>
         <nav class="menu" id="menu">
@@ -26,6 +28,7 @@
                 <li><a href="#section9">Detección de la Geolocalización</a></li>
                 <li><a href="#section10">Filtro de Busqueda</a></li>
                 <li><a href="#section11">Sorteo Digital</a></li>
+                <li><a href="#section12">Responsive Slider</a></li>
             </ul>
         </nav>
     </aside>
@@ -115,53 +118,53 @@
                 </form>
                 <div class="cards__filter">
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/animals" alt="Animals"/>
+                        <img src="https://placeimg.com/200/200/animals" alt="Animals" />
                         <figcaption>Animals</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/nature" alt="Nature"/>
+                        <img src="https://placeimg.com/200/200/nature" alt="Nature" />
                         <figcaption>Nature</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/tech" alt="Tech"/>
+                        <img src="https://placeimg.com/200/200/tech" alt="Tech" />
                         <figcaption>Tech</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/people" alt="People"/>
+                        <img src="https://placeimg.com/200/200/people" alt="People" />
                         <figcaption>People</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/arch" alt="Architecture"/>
+                        <img src="https://placeimg.com/200/200/arch" alt="Architecture" />
                         <figcaption>Architecture</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/any" alt="Any"/>
+                        <img src="https://placeimg.com/200/200/any" alt="Any" />
                         <figcaption>Any</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/arch" alt="Architecture"/>
+                        <img src="https://placeimg.com/200/200/arch" alt="Architecture" />
                         <figcaption>Architecture</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/people" alt="People"/>
+                        <img src="https://placeimg.com/200/200/people" alt="People" />
                         <figcaption>People</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/animals" alt="Animals"/>
+                        <img src="https://placeimg.com/200/200/animals" alt="Animals" />
                         <figcaption>Animals</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/any" alt="Any"/>
+                        <img src="https://placeimg.com/200/200/any" alt="Any" />
                         <figcaption>Any</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/nature" alt="Nature"/>
+                        <img src="https://placeimg.com/200/200/nature" alt="Nature" />
                         <figcaption>Nature</figcaption>
                     </figure>
                     <figure class="card">
-                        <img src="https://placeimg.com/200/200/tech" alt="Tech"/>
+                        <img src="https://placeimg.com/200/200/tech" alt="Tech" />
                         <figcaption>Tech</figcaption>
-                    </figure> 
+                    </figure>
                 </div>
             </section>
             <section class="section section11" id="section11">
@@ -179,10 +182,47 @@
                 </ul>
                 <button class="btn2" id="btnWinner">Seleccionar Ganador</button>
             </section>
+            <section class="section section12" id="section12">
+                <h2>Sección 12</h2>
+                <p>Slider Responsivo</p>
+                <div class="slider">
+                    <div class="slider__content">
+                        <div class="slider__item item-active">
+                            <img src="../../assets/images/beach.webp" alt="Slider Image">
+                        </div>
+                        <div class="slider__item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, minus! Labore accusantium
+                                perspiciatis earum sapiente vero animi eos eligendi voluptas veniam suscipit magnam
+                                facilis officia quidem, fugit, aspernatur ea neque.</p>
+                        </div>
+                        <div class="slider__item">
+                            <img src="../../assets/images/summer.webp" alt="Slider Image">
+                        </div>
+                        <div class="slider__item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, minus! Labore accusantium
+                                perspiciatis earum sapiente vero animi eos eligendi voluptas veniam suscipit magnam
+                                facilis officia quidem, fugit, aspernatur ea neque.</p>
+                        </div>
+                        <div class="slider__item">
+                            <img src="../../assets/images/winter.webp" alt="Slider Image">
+                        </div>
+                        <div class="slider__item">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, minus! Labore accusantium
+                                perspiciatis earum sapiente vero animi eos eligendi voluptas veniam suscipit magnam
+                                facilisofficia quidem, fugit, aspernatur ea neque.</p>
+                        </div>
+                    </div>
+                    <div class="slider__btns">
+                        <span class="prevItem"></span>
+                        <span class="nextItem"></span>
+                    </div>
+                </div>
+            </section>
             <span class="btn btnScroll" id="btnScroll"></span>
             <span class="btn btnModeDark" id="btnModeDark"></span>
         </main>
     </div>
     <script src="./76.index.js" type="module"></script>
 </body>
+
 </html>

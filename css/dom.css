@@ -346,7 +346,7 @@ mark {
   order: 1;
   visibility: hidden;
 }
-/* ***************** Sección 10 ***************** */
+/* ***************** Sección 11 ***************** */
 .giveaway {
   margin-block-end: 15px;
 }
@@ -357,6 +357,68 @@ mark {
   padding-block: 5px;
 }
 
-.winner{
+.winner {
   color: var(--dark-red);
+}
+/* ***************** Sección 12 ***************** */
+.slider {
+  box-shadow: 2px 2px 3px var(--yellow);
+  height: 400px;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  width: 50vw;
+}
+
+.slider__content {
+  height: inherit;
+  position: relative;
+  max-width: inherit;
+}
+
+.slider__item {
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: all 1s ease;
+}
+
+.item-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider img {
+  height: inherit;
+  max-width: 600px;
+  object-fit: cover;
+  width: 50vw;
+}
+
+.slider__btns {
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+.slider__btns span {
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.prevItem {
+  background-image: url("../assets/icons/arrowLeft.svg");
+}
+
+.nextItem {
+  background-image: url("../assets/icons/arrowRight.svg");
 }

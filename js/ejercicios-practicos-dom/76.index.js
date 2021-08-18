@@ -12,6 +12,7 @@ import deteccionWebCam from "./deteccion_webcam.js";
 import detectarGeolocalizacion from "./geolocalizacion.js";
 import filter from "./filtro_busqueda.js";
 import seleccionarGanador from "./ganador.js";
+import sliderResponsive from "./slider_responsivo.js";
 
 //Añadiendo eventos con 'DOMContentLoaded'
 const d = document;
@@ -42,6 +43,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   detectarGeolocalizacion("#section9");
   filter("#search", ".clearSearch", ".cards__filter");
   seleccionarGanador(".giveaway", "#btnWinner");
+  sliderResponsive(".slider__content", ".prevItem", ".nextItem");
 });
 
 modeDark("#btnModeDark");
