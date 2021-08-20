@@ -8,7 +8,7 @@ export default function modeDark(boton) {
       document.body.classList.toggle("modeDark");
       $btnModeDark.classList.toggle("btnModeLight");
 
-      document.body.querySelector("h1").classList.toggle("background-dark");
+      document.body.querySelector("header").classList.toggle("background-dark");
 
       let $sections = document.body.querySelectorAll("section");
       $sections.forEach((e) => {
@@ -27,7 +27,7 @@ export default function modeDark(boton) {
                 }
             })*/
       localStorage.setItem("modo", d.body.classList);
-      localStorage.setItem("modoH1", d.body.querySelector("h1").classList);
+      localStorage.setItem("modoHeader", d.body.querySelector("header").classList);
 
       localStorage.setItem(
         "modoSection1",
@@ -94,7 +94,7 @@ export default function modeDark(boton) {
   d.addEventListener("DOMContentLoaded", (e) => {
     if (localStorage.length !== 0) {
       const modo = localStorage.getItem("modo");
-      const modoH1 = localStorage.getItem("modoH1");
+      const modoHeader = localStorage.getItem("modoHeader");
       const modoSection1 = localStorage.getItem("modoSection1");
       const modoSection2 = localStorage.getItem("modoSection2");
       const modoSection3 = localStorage.getItem("modoSection3");
@@ -113,7 +113,7 @@ export default function modeDark(boton) {
       const modoBtnMode = localStorage.getItem("btnModeImage");
 
       d.body.classList = modo;
-      d.querySelector("h1").classList = modoH1;
+      d.querySelector("header").classList = modoHeader;
 
       d.querySelector("#section1").classList = modoSection1;
       d.querySelector("#section2").classList = modoSection2;

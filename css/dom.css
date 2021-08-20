@@ -24,12 +24,11 @@ html {
 }
 
 h1 {
-  background-color: var(--primary-color);
   color: var(--white);
   font-size: 5rem;
-  padding-block: 10px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  margin-block-end: 20px;
 }
 
 p {
@@ -40,6 +39,12 @@ p {
 
 mark {
   font-size: 1.6rem;
+}
+
+header {
+  background-color: var(--primary-color);
+  margin-block-end: 20px;
+  width: 100%;
 }
 
 .container {
@@ -68,7 +73,7 @@ mark {
   display: none;
   background-color: rgba(0, 0, 0, 0.8);
   bottom: 0;
-  height: 100vh;
+  min-height: 100vh;
   left: 0;
   overflow-y: auto;
   position: fixed;
@@ -421,4 +426,71 @@ mark {
 
 .nextItem {
   background-image: url("../assets/icons/arrowRight.svg");
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    left: 0;
+    margin-block-end: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 995;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  aside {
+    display: block;
+    height: calc(100vh - 80px);
+    left: auto;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 30%;
+  }
+
+  .menu {
+    display: block;
+    height: calc(100vh - 80px);
+    left: auto;
+    right: 0;
+    top: 80px;
+    width: 30%;
+  }
+
+  .menu ul {
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .menu ul li a {
+    font-size: 2rem;
+    padding-block: 10px;
+  }
+
+  .menu .scroll-spy {
+    background-color: var(--yellow);
+    color: var(--primary-color);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hamburger-button {
+    display: none;
+  }
+
+  .btnScroll {
+    right: calc(30vw + 10px);
+  }
 }

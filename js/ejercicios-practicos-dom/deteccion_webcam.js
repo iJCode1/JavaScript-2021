@@ -18,7 +18,7 @@ export default async function deteccionWebCam(contenedor, limitaciones){
         $video.srcObject = stream;
         $video.play();
     }catch(e){
-        console.error("Error: "+e);
+        // console.error("Error: "+e);
         $p.innerHTML = `Error: <mark>${e}</mark>`;
         $contenedor.appendChild($p);
         $contenedor.removeChild($video);

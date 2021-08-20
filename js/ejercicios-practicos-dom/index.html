@@ -14,31 +14,13 @@
 </head>
 
 <body>
-    <aside>
-        <nav class="menu" id="menu">
-            <ul>
-                <li><a href="#section1">Reloj Digital y Alarma Sonora</a></li>
-                <li><a href="#section2">Eventos del Teclado 'Atajos'</a></li>
-                <li><a href="#section3">Cuenta Regresiva</a></li>
-                <li><a href="#section4">Responsive con Javascript</a></li>
-                <li><a href="#section5">Responsive Tester</a></li>
-                <li><a href="#section6">Detección de Dispositivos (User Agent)</a></li>
-                <li><a href="#section7">Detección del Estado de la Red (Online || Offline)</a></li>
-                <li><a href="#section8">Detección de la Cámara Web</a></li>
-                <li><a href="#section9">Detección de la Geolocalización</a></li>
-                <li><a href="#section10">Filtro de Busqueda</a></li>
-                <li><a href="#section11">Sorteo Digital</a></li>
-                <li><a href="#section12">Responsive Slider</a></li>
-            </ul>
-        </nav>
-    </aside>
     <header>
         <h1>Ejercicios del DOM</h1>
     </header>
     <button class="btn hamburger-button" id="hamburger-button" aria-label="Hamburger Button"></button>
     <div class="container">
         <main>
-            <section id="section1" class="section section1">
+            <section id="section1" class="section section1" data-scroll-spy>
                 <h2>Sección 1</h2>
                 <p>Reloj Digital y Alarma Sonora</p>
                 <span id="clock"></span>
@@ -48,14 +30,14 @@
                 <button id="alarmaIniciar">Iniciar Alarma</button>
                 <button id="alarmaDetener">Detener Alarma</button>
             </section>
-            <section id="section2" class="section">
+            <section id="section2" class="section" data-scroll-spy>
                 <h2>Sección 2</h2>
                 <p>Eventos del Teclado</p>
                 <div class="keyboard-wrapper" id="keyboard-wrapper">
                     <span class="keyboard-ball" id="keyboard-ball"></span>
                 </div>
             </section>
-            <section id="section3" class="section section3">
+            <section id="section3" class="section section3" data-scroll-spy>
                 <h2>Sección 3</h2>
                 <p>Cuenta regresiva - countdown</p>
                 <span class="countdown" id="countdown"></span>
@@ -68,13 +50,13 @@
                     <button class="detenerCountdown">Detener cuenta regresiva</button>
                 </div>
             </section>
-            <section id="section4" class="section section4">
+            <section id="section4" class="section section4" data-scroll-spy>
                 <h2>Sección 4</h2>
                 <p>Responsive con Javascript</p>
                 <div class="section4--video"></div>
                 <div class="section4--mapa"></div>
             </section>
-            <section id="section5" class="section section5">
+            <section id="section5" class="section section5" data-scroll-spy>
                 <h2>Sección 5</h2>
                 <p>Responsive Tester</p>
                 <form id="form">
@@ -91,24 +73,24 @@
                     <input name="cerrar" class="btn2" id="btnCerrar" type="button" value="Cerrar">
                 </form>
             </section>
-            <section class="section section6" id="section6">
+            <section class="section section6" id="section6" data-scroll-spy>
                 <h2>Sección 6</h2>
                 <p>Detección de Dispositivos</p>
                 <div id="deteccion-dispositivos"></div>
             </section>
-            <section class="section section7" id="section7">
+            <section class="section section7" id="section7" data-scroll-spy>
                 <h2>Sección 7</h2>
                 <p>Detección del Estado de la Red</p>
             </section>
-            <section class="section section8" id="section8">
+            <section class="section section8" id="section8" data-scroll-spy>
                 <h2>Sección 8</h2>
                 <p>Detección de la Cámara Web</p>
             </section>
-            <section class="section section9" id="section9">
+            <section class="section section9" id="section9" data-scroll-spy>
                 <h2>Sección 9</h2>
                 <p>Detección de la Geolocalización</p>
             </section>
-            <section class="section section10" id="section10">
+            <section class="section section10" id="section10" data-scroll-spy>
                 <h2>Sección 10</h2>
                 <p>Filtro de Busqueda</p>
                 <form>
@@ -167,7 +149,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="section section11" id="section11">
+            <section class="section section11" id="section11" data-scroll-spy>
                 <h2>Sección 11</h2>
                 <p>Sorteo Digital</p>
                 <ul class="giveaway">
@@ -182,7 +164,7 @@
                 </ul>
                 <button class="btn2" id="btnWinner">Seleccionar Ganador</button>
             </section>
-            <section class="section section12" id="section12">
+            <section class="section section12" id="section12" data-scroll-spy>
                 <h2>Sección 12</h2>
                 <p>Slider Responsivo</p>
                 <div class="slider">
@@ -221,7 +203,26 @@
             <span class="btn btnScroll" id="btnScroll"></span>
             <span class="btn btnModeDark" id="btnModeDark"></span>
         </main>
+        <aside>
+            <nav class="menu" id="menu">
+                <ul>
+                    <li><a href="#section1" data-scroll-spy>Reloj Digital y Alarma Sonora</a></li>
+                    <li><a href="#section2" data-scroll-spy>Eventos del Teclado 'Atajos'</a></li>
+                    <li><a href="#section3" data-scroll-spy>Cuenta Regresiva</a></li>
+                    <li><a href="#section4" data-scroll-spy>Responsive con Javascript</a></li>
+                    <li><a href="#section5" data-scroll-spy>Responsive Tester</a></li>
+                    <li><a href="#section6" data-scroll-spy>Detección de Dispositivos (User Agent)</a></li>
+                    <li><a href="#section7" data-scroll-spy>Detección del Estado de la Red (Online || Offline)</a></li>
+                    <li><a href="#section8" data-scroll-spy>Detección de la Cámara Web</a></li>
+                    <li><a href="#section9" data-scroll-spy>Detección de la Geolocalización</a></li>
+                    <li><a href="#section10" data-scroll-spy>Filtro de Busqueda</a></li>
+                    <li><a href="#section11" data-scroll-spy>Sorteo Digital</a></li>
+                    <li><a href="#section12" data-scroll-spy>Responsive Slider</a></li>
+                </ul>
+            </nav>
+        </aside>
     </div>
+    
     <script src="./76.index.js" type="module"></script>
 </body>
 
