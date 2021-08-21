@@ -428,18 +428,59 @@ header {
   background-image: url("../assets/icons/arrowRight.svg");
 }
 /* ***************** Sección 13 ***************** */
-.video__inteligente{
+.video__inteligente {
   max-width: 700px;
   margin: 0 auto;
   width: 70vw;
 }
 
-.video__inteligente video{
+.video__inteligente video {
   max-width: inherit;
   width: inherit;
   height: auto;
 }
 
+/* ***************** Sección 14 ***************** */
+.section14 form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section14 label {
+  font-size: 1.8rem;
+}
+
+.section14 input,
+.section14 textarea {
+  position: relative;
+  font-size: 1.8rem;
+  padding-block: 5px;
+  padding-inline: 10px;
+}
+
+.section14 input[type="text"]:invalid,
+.section14 input[type="email"]:invalid,
+.section14 textarea:invalid{
+  border: 2px solid var(--dark-red);
+}
+
+.section14 input[type="text"]:valid,
+.section14 input[type="email"]:valid,
+.section14 textarea:valid{
+  border: 2px solid #52b788;
+}
+
+.section14 input[type="text"]:matches(false){
+  background-color: var(--dark-red);
+  width: 200px;
+  height: 30px;
+}
+
+.section14 textarea{
+  resize: none;
+}
 
 /* ***************** Laptop ***************** */
 @media screen and (min-width: 1024px) {

@@ -205,10 +205,34 @@
                 <p>Video Inteligente</p>
                 <div class="video__inteligente">
                     <video src="../../assets/video/cuphead.mp4" controls loop data-smart-video></video>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     <video src="../../assets/video/cuphead.mp4" controls loop data-smart-video></video>
                 </div>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </section>
+            <section class="section section14" id="section14">
+                <h2>Sección 14</h2>
+                <p>Validación de Formulario</p>
+                <form id="form-validation">
+                    <label>
+                        Nombre:
+                        <input class="in-name" id="in-name" type="text" title="Ingresa un nombre válido" placeholder="Joel" name="name" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                    </label>
+                    <label>
+                        Correo:
+                        <input id="in-email" type="email" title="Ingresa un correo válido" placeholder="example@gmail.com" name="email" required pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$">
+                    </label>
+                    <label>
+                        Asunto:
+                        <input id="in-issue" type="text" title="Ingresa un asunto válido" placeholder="Comentario del video 12" name="issue" required>
+                    </label>
+                    <label>
+                        Comentario:
+                        <textarea name="comments" title="Ingresa un comentario válido" id="in-comments" cols="50" rows="10"
+                            placeholder="Mi comentario es debido a ..." data-pattern="^.{1,255}$" required></textarea>
+                    </label>
+                    <input class="btn2" type="reset">
+                    <input class="btn2" type="submit" value="Enviar">
+                </form>
             </section>
             <span class="btn btnScroll" id="btnScroll"></span>
             <span class="btn btnModeDark" id="btnModeDark"></span>
@@ -229,11 +253,12 @@
                     <li><a href="#section11" data-scroll-spy>Sorteo Digital</a></li>
                     <li><a href="#section12" data-scroll-spy>Responsive Slider</a></li>
                     <li><a href="#section13" data-scroll-spy>Video Inteligente</a></li>
+                    <li><a href="#section14" data-scroll-spy>Validación de Formulario</a></li>
                 </ul>
             </nav>
         </aside>
     </div>
-    
+
     <script src="./76.index.js" type="module"></script>
 </body>
 
