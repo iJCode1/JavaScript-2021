@@ -427,7 +427,21 @@ header {
 .nextItem {
   background-image: url("../assets/icons/arrowRight.svg");
 }
+/* ***************** Sección 13 ***************** */
+.video__inteligente{
+  max-width: 700px;
+  margin: 0 auto;
+  width: 70vw;
+}
 
+.video__inteligente video{
+  max-width: inherit;
+  width: inherit;
+  height: auto;
+}
+
+
+/* ***************** Laptop ***************** */
 @media screen and (min-width: 1024px) {
   header {
     align-items: center;
