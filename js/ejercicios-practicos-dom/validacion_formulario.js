@@ -1,6 +1,7 @@
 const d = document;
 
 export default function validarFormulario() {
+  const $formulario = d.querySelector("#form-validation");
   const $inNombre = d.querySelector("#in-name");
   const $inCorreo = d.querySelector("#in-email");
   const $inAsunto = d.querySelector("#in-issue");
@@ -36,5 +37,21 @@ export default function validarFormulario() {
         $spans[3].classList.remove("in--none");
       }
     }
+  });
+
+  const $btnSubmit = d.querySelector("#form-validation input[type='submit']");
+  const $loader = d.querySelector(".contact-form-loader");
+  const $response = d.querySelector(".contact-form-response");
+
+  d.addEventListener("submit", (e) => {
+    $loader.classList.remove("form--none");
+    setTimeout((e) => {
+      $loader.classList.add("form--none");
+      $response.classList.remove("form--none");
+      $formulario.reset();
+      setTimeout((e) => {
+        $response.classList.add("form--none");
+      }, 3000);
+    }, 3000);
   });
 }

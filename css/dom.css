@@ -502,6 +502,13 @@ header {
   display: none;
 }
 
+.contact-form-response p{
+  font-size: 3rem;
+}
+
+.form--none{
+  display: none;
+}
 /* ***************** Laptop ***************** */
 @media screen and (min-width: 1024px) {
   header {
