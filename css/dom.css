@@ -450,6 +450,11 @@ header {
 
 .section14 label {
   font-size: 1.8rem;
+  width: 80%;
+}
+
+.section14 input {
+  width: 60%;
 }
 
 .section14 input,
@@ -462,24 +467,39 @@ header {
 
 .section14 input[type="text"]:invalid,
 .section14 input[type="email"]:invalid,
-.section14 textarea:invalid{
+.section14 textarea:invalid {
   border: 2px solid var(--dark-red);
 }
 
 .section14 input[type="text"]:valid,
 .section14 input[type="email"]:valid,
-.section14 textarea:valid{
+.section14 textarea:valid {
   border: 2px solid #52b788;
 }
 
-.section14 input[type="text"]:matches(false){
+.section14 input[type="text"]:matches(false) {
   background-color: var(--dark-red);
   width: 200px;
   height: 30px;
 }
 
-.section14 textarea{
+.section14 textarea {
   resize: none;
+}
+
+.error--input {
+  background-color: red;
+  color: var(--white);
+  font-size: 2rem;
+  margin-top: -15px;
+  padding-block: 5px;
+  padding-inline: 5px;
+  text-align: center;
+  width: 40%;
+}
+
+.in--none{
+  display: none;
 }
 
 /* ***************** Laptop ***************** */

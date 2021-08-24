@@ -15,6 +15,7 @@ import seleccionarGanador from "./ganador.js";
 import sliderResponsive from "./slider_responsivo.js";
 import scrollSpy from "./scrollSpy.js";
 import videoInteligente from "./video-inteligente.js";
+import validarFormulario from "./validacion_formulario.js";
 
 //Añadiendo eventos con 'DOMContentLoaded'
 const d = document;
@@ -48,6 +49,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   sliderResponsive(".slider__content", ".prevItem", ".nextItem");
   scrollSpy();
   videoInteligente();
+  validarFormulario();
 });
 
 modeDark("#btnModeDark");
