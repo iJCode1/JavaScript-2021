@@ -16,6 +16,7 @@ import sliderResponsive from "./slider_responsivo.js";
 import scrollSpy from "./scrollSpy.js";
 import videoInteligente from "./video-inteligente.js";
 import validarFormulario from "./validacion_formulario.js";
+import narrador from "./narrador.js";
 
 //Añadiendo eventos con 'DOMContentLoaded'
 const d = document;
@@ -53,6 +54,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
 });
 
 modeDark("#btnModeDark");
+narrador();
 
 d.addEventListener("keydown", (e) => {
   keyboardBall(e, "#keyboard-ball", "#keyboard-wrapper");
